@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pmd xmlns="http://pmd.sourceforge.net/report/2.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pmd.sourceforge.net/report/2.0.0 http://pmd.sourceforge.net/report_2_0_0.xsd" version="6.55.0" timestamp="2024-05-26T22:08:03.232">
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\application\crawler\WebCrawlerJSoup.java">
+<violation beginline="5" endline="5" begincolumn="1" endcolumn="44" rule="UnnecessaryImport" ruleset="Code Style" package="webcrawler.application.crawler" class="WebCrawlerJSoup" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessaryimport" priority="4">
+Unused import 'javax.swing.text.html.parser.Element'
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\entities\ILinkData.java">
+<violation beginline="6" endline="6" begincolumn="9" endcolumn="54" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.entities" class="ILinkData" method="createLink" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'createLink': the method is declared in an interface type
+</violation>
+<violation beginline="7" endline="7" begincolumn="9" endcolumn="54" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.entities" class="ILinkData" method="updateLink" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'updateLink': the method is declared in an interface type
+</violation>
+<violation beginline="8" endline="8" begincolumn="9" endcolumn="32" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.entities" class="ILinkData" method="detailLink" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'detailLink': the method is declared in an interface type
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\entities\ISiteData.java">
+<violation beginline="8" endline="8" begincolumn="9" endcolumn="62" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.entities" class="ISiteData" method="createSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'createSite': the method is declared in an interface type
+</violation>
+<violation beginline="9" endline="9" begincolumn="9" endcolumn="62" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.entities" class="ISiteData" method="updateSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'updateSite': the method is declared in an interface type
+</violation>
+<violation beginline="10" endline="10" begincolumn="9" endcolumn="32" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.entities" class="ISiteData" method="detailSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'detailSite': the method is declared in an interface type
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\usecase\crawler\ICrawlerURLGet.java">
+<violation beginline="9" endline="9" begincolumn="12" endcolumn="24" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.crawler" class="ICrawlerURLGet" method="getUrl" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getUrl': the method is declared in an interface type
+</violation>
+<violation beginline="10" endline="10" begincolumn="12" endcolumn="51" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.crawler" class="ICrawlerURLGet" method="saveUrlOfSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'saveUrlOfSite': the method is declared in an interface type
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\usecase\crawler\IWebCrawler.java">
+<violation beginline="7" endline="7" begincolumn="12" endcolumn="33" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.crawler" class="IWebCrawler" method="getSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getSite': the method is declared in an interface type
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\usecase\link\ILinkDbInput.java">
+<violation beginline="6" endline="6" begincolumn="12" endcolumn="32" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.link" class="ILinkDbInput" method="getLink" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getLink': the method is declared in an interface type
+</violation>
+<violation beginline="7" endline="7" begincolumn="12" endcolumn="33" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.link" class="ILinkDbInput" method="getNumberOfLink" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getNumberOfLink': the method is declared in an interface type
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\usecase\link\ILinkDbOutput.java">
+<violation beginline="6" endline="6" begincolumn="12" endcolumn="42" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.link" class="ILinkDbOutput" method="saveLink" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'saveLink': the method is declared in an interface type
+</violation>
+<violation beginline="7" endline="7" begincolumn="12" endcolumn="61" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.link" class="ILinkDbOutput" method="updateLink" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'updateLink': the method is declared in an interface type
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\usecase\site\ISiteDbInput.java">
+<violation beginline="7" endline="7" begincolumn="12" endcolumn="32" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.site" class="ISiteDbInput" method="getSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getSite': the method is declared in an interface type
+</violation>
+<violation beginline="8" endline="8" begincolumn="12" endcolumn="42" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.site" class="ISiteDbInput" method="containSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'containSite': the method is declared in an interface type
+</violation>
+<violation beginline="9" endline="9" begincolumn="12" endcolumn="44" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.site" class="ISiteDbInput" method="containSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'containSite': the method is declared in an interface type
+</violation>
+<violation beginline="10" endline="10" begincolumn="12" endcolumn="33" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.site" class="ISiteDbInput" method="getNumberOfSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'getNumberOfSite': the method is declared in an interface type
+</violation>
+</file>
+<file name="E:\Users\Danaleight\Documents\2_LOISIRS\00_PROGRAMMATION\SmallProjects\01_WebCrawler\src\main\java\webcrawler\domain\usecase\site\ISiteDbOutput.java">
+<violation beginline="7" endline="7" begincolumn="12" endcolumn="42" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.site" class="ISiteDbOutput" method="saveSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'saveSite': the method is declared in an interface type
+</violation>
+<violation beginline="8" endline="8" begincolumn="12" endcolumn="56" rule="UnnecessaryModifier" ruleset="Code Style" package="webcrawler.domain.usecase.site" class="ISiteDbOutput" method="updateSite" externalInfoUrl="https://pmd.github.io/pmd-6.55.0/pmd_rules_java_codestyle.html#unnecessarymodifier" priority="3">
+Unnecessary modifier 'public' on method 'updateSite': the method is declared in an interface type
+</violation>
+</file>
+</pmd>
