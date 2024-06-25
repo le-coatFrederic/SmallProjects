@@ -1,0 +1,15 @@
+application\output\TerminalDisplay.class
+application\textSearch\IAlgoResolver.class
+domain\usecase\IWriterOutput.class
+application\Main.class
+domain\usecase\ITextReaderInput.class
+application\input\TextFileReader.class
+domain\usecase\TextReaderUse.class
+application\output\FoundWriter.class
+domain\usecase\ITextDisplay.class
+domain\value\FoundMotif.class
+application\textSearch\BrutAlgo.class
+domain\entity\Text.class
+application\textSearch\MorrisPrattAlgo.class
+domain\usecase\ITextSearchPattern.class
+application\textSearch\AlgoResolver.class

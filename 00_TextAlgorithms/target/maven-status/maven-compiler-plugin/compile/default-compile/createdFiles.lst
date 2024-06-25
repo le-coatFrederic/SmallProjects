@@ -1,0 +1,10 @@
+domains\usecase\text\package-info.class
+domains\usecase\text\TextHashMapDataManager.class
+domains\usecase\text\ITextOperation.class
+domains\usecase\text\type\package-info.class
+domains\usecase\text\ITextReader.class
+domains\entities\text\ITextDataManager.class
+domains\usecase\text\type\DTOTextOperationOccurence.class
+domains\entities\text\package-info.class
+domains\usecase\text\type\TextAssociationIndice.class
+domains\entities\text\Text.class
