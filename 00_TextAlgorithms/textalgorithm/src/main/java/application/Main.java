@@ -4,53 +4,58 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.ArrayList;
 
-import application.input.TextFileReader;
-import application.output.FoundWriter;
-import application.textSearch.AlgoResolver;
-import application.textSearch.BrutAlgo;
-import application.textSearch.MorrisPrattAlgo;
-import domain.usecase.ITextReaderInput;
-import domain.usecase.IWriterOutput;
-import domain.usecase.TextReaderUse;
-import domain.value.FoundMotif;
+import application.Main.Algo;
 
 public class Main {
-    public static void main(String[] args) {
-        ITextReaderInput reader1 = new TextFileReader("test.txt");
-        TextReaderUse textRepository = new TextReaderUse();
-        IWriterOutput brutWriter = new FoundWriter("output_brut.txt");
-        IWriterOutput morrisPrattWriter = new FoundWriter("output_morris_pratt.txt");
-        AlgoResolver brutResolver = new AlgoResolver(new BrutAlgo());
-        AlgoResolver morrisPrattResolver = new AlgoResolver(new MorrisPrattAlgo());
 
-        reader1.readText(textRepository);
+    private enum Algo {
+        BRUT,
+        KMP,
+        KMP_IMPROVED,
+    };
 
-        // BRUT
+    private class ResultatAlgo {
+        public ArrayList<Integer> positions = new ArrayList<>();
+        public int nbOccurenceNonTestee = 0;
+        public int nbComparaisonNonTestee = 0;
+        public ResultatAlgo(){}
 
-        Instant start = Instant.now();
-        ArrayList<FoundMotif> foundForBrut = brutResolver.searchPattern("ATAATATA", textRepository.getTexts().get(0).getValue().get(0));
-        Instant end = Instant.now();
-        
-        for (FoundMotif found : foundForBrut) {
-            brutWriter.writeFound(found.toString() + "\n");
+        public String toString() {
+            String retour = "";
+            retour = "RESULTATS :\b" + positions.forEach((position) -> {
+                retour += position;
+            });
+        }
+    }
+
+    private ResultatAlgo startAlgo(Algo algo) {
+        ResultatAlgo resultat = new ResultatAlgo();
+        switch (algo) {
+            case BRUT:
+                break;
+            case KMP:
+                break;
+            case KMP_IMPROVED:
+                break;
+            default:
+                throw new AssertionError();
         }
 
-        System.out.println("Time duration Brut force : " + Duration.between(start, end).toMillis() + " ms\n" + foundForBrut.size() + " iteration of the motif has been found");
-        brutWriter.writeFound("Time duration Brut force : " + Duration.between(start, end).toMillis() + " ms\n");
-        brutWriter.writeFound(foundForBrut.size() + " iteration of the motif has been found");
+        return resultat;
+    }
+
+    public void showResultats(ResultatAlgo resultats) {
+        System.out.println(startAlgo(Algo.BRUT));
+    }
+    public static void main(String[] args) {
 
         // MORRIS PRATT
 
-        start = Instant.now();
-        ArrayList<FoundMotif> foundForMorrisPratt = morrisPrattResolver.searchPattern("ATAATATA", textRepository.getTexts().get(0).getValue().get(0));
-        end = Instant.now();
+        System.out.println(showResultats(startAlgo(Algo.BRUT)));
 
-        for (FoundMotif found : foundForMorrisPratt) {
-            morrisPrattWriter.writeFound(found.toString() + "\n");
-        }
+        Instant start = Instant.now();
+        Instant end = Instant.now();
 
         System.out.println("Time duration Morris Pratt : " + Duration.between(start, end).toMillis() + " ms\n" + foundForMorrisPratt.size() + " iteration of the motif has been found");
-        morrisPrattWriter.writeFound("Time duration Morris Pratt : " + Duration.between(start, end).toMillis() + " ms\n");
-        morrisPrattWriter.writeFound(foundForMorrisPratt.size() + " iteration of the motif has been found");
     }
 }
